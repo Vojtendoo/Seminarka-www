@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn2Win</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Dekorace vlevo -->
+<img src="images/mainpage_deco1.png" alt="Dekorace vlevo" class="left-deco">
+
+<!-- Dekorace vpravo -->
+<img src="images/mainpage_deco2.png" alt="Dekorace vpravo" class="right-deco">
+
+<!-- Navigační lišta -->
+<header>
+    <div class="navbar">
+        <h1 class="logo">
+            <button class="logo-button" onclick="location.href='index.html';">
+                <img src="images/logo.png" alt="Learn2Win logo" class="logo-img">
+            </button>
+        </h1>
+        <!-- Navigační odkazy pro větší obrazovky -->
+        <nav class="nav-bar-links">
+            <ul class="nav-links">
+                <li><a href="znamky.html">Známky</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="kolekce.html">Kolekce</a></li>
+                <li><a href="informace.html">Informace</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger tlačítko pro menší obrazovky -->
+        <button class="hamburger" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Postranní menu -->
+<nav class="side-menu">
+    <ul class="nav-links">
+        <li><a href="znamky.html">Známky</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="kolekce.html">Kolekce</a></li>
+        <li><a href="informace.html">Informace</a></li>
+    </ul>
+</nav>
+
+<!-- Popup okno pro přihlášení -->
+<div id="loginPopup" class="popup hidden">
+    <div class="popup-content">
+        <span id="closePopup" class="close-popup">&times;</span>
+        <h2>Přihlášení</h2>
+        <form>
+            <label for="username">Uživatelské jméno:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Heslo:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="submit-btn">Přihlásit se</button>
+        </form>
+    </div>
+</div>
+
+<main>
+    <section id="intro">
+        <h2>Vítejte v Learn2Win</h2>
+        <p>Studujte, zlepšujte se a vyhrávejte!</p>
+    </section>
+    <div class="main_text-Learn2Win">
+        Tato aplikace slouží k zaznamenávání výkonu studentů v zábavnější formě.
+        Student za získané známky získává truhly, které mu po otevření nabídnou různé herní předměty z
+        okruhu daného tématu, ze kterého byla známka udělena.
+    </div>
+    <section id="text_prihlaseni">
+        <h2>Zapojte se a sbírejte herní prvky ještě dnes</h2>
+    </section>
+    <!-- Tlačítko pro přihlášení pod textem -->
+    <button id="loginButton" class="login-btn">Přihlásit se</button>
+    <section id="text_predplatne">
+        <h2>Vyberte si z našich předplatných:</h2>
+    </section>
+    <!-- Tři šedá okna -->
+    <section class="card-container">
+        <div class="card">
+            <h3>Basic</h3>
+            <button class="card-btn">Vybrat</button>
+        </div>
+        <div class="card">
+            <h3>Plus</h3>
+            <button class="card-btn">Vybrat</button>
+        </div>
+        <div class="card">
+            <h3>Pro</h3>
+            <button class="card-btn">Vybrat</button>
+        </div>
+    </section>
+</main>
+<!-- Patička -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Sekce 1: Copyright -->
+        <div class="footer-section">
+            <p>&copy; 2024 Learn2Win. Všechna práva vyhrazena.</p>
+        </div>
+        <!-- Sekce 2: Odkazy na sociální sítě -->
+        <div class="footer-section">
+            <p>Sledujte nás:</p>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+        <!-- Sekce 3: Kontakty -->
+        <div class="footer-section">
+            <p>Kontaktujte nás:</p>
+            <p>Email: <a href="mailto:support@learn2win.cz">support@learn2win.cz</a></p>
+            <p>Telefon: +420 123 456 789</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="hamburger_menu.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
+
+
